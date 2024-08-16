@@ -430,11 +430,11 @@ a{
     line-height:3rem;
   }
   
-  .project-subHeading{
+/*   .project-subHeading{
     width:70%;
     font-size:16px;
     font-style: italic;
-  }
+  } */
   .project-sub-heading{
     width: 70%;
     font-size: 16px;

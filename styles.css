@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 
-*{
+* {
   margin:0;
   padding:0;
-  /* box-sizing:border-box; */
+  box-sizing:border-box;
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
 }
@@ -28,22 +28,21 @@
     align-items:center;
     margin-left: 5rem;
     margin-right: 5rem;
-
     padding-top:1rem;
 }
 
 .logo{
-    width:80px;
+    width:70px;
 }
 
-.logo-container{
+.logo-container{  
     display:flex;
     justify-content: baseline;
     align-items: center;
 }
 
 .logo-text{
-    margin-left:-1.2rem;
+    margin-left: -1rem;
     font-size:28px;
 }
 
@@ -61,7 +60,7 @@
 }
 .nav-items div a{
     color:black;
-    /* transition: all 5s ease; */
+    transition: all 5s ease;
 }
 
 a{
@@ -93,13 +92,13 @@ a{
     color:rgb(231,231,231);
     
     bottom: -16%;
-    left: -5%;
+    left: 1%;
     font-weight: bold;
     transition: all 3s;
 }
 
 .hero-section-left{
-    /* width:100%; */
+    
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -123,7 +122,7 @@ a{
 
 .main-image img{
   height: 400px;
-  /* width: px; */
+  width: px;
 }
 
 .role{
@@ -332,7 +331,7 @@ a{
     height:550px;
     background-image: url(./images/projects/razorpay.png);
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    
     position:relative;
     box-shadow:0px 0px 40px #1f1f1f;
   }
@@ -346,7 +345,7 @@ a{
     bottom:0;
     background-color: #1f1f1f9a;
     z-index:0;
-    /* transform: scaleX(1); */
+   
   }
 
   .project-card::before{
@@ -373,12 +372,12 @@ a{
     font-weight:600;
     color:white;
     z-index:10;
-    /* display:none; */
+    display:none;
     opacity: 0;
   }
 
   .project-card:hover .project-number{
-    /* display:block; */
+    display:block;
     opacity: 1;
   }
 
@@ -410,7 +409,7 @@ a{
   }
 
   .project-content-right{ 
-    right:10%;
+    left:20%;
   }
 
   .project-skills-container{
@@ -436,7 +435,11 @@ a{
     font-size:16px;
     font-style: italic;
   }
-
+  .project-sub-heading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+  }
 
   .btn-group{
     display:flex;
@@ -479,7 +482,9 @@ a{
     background-image: url(./images/projects/Project4.png);
   }
 
- @media (max-width: 1300px) {
+ 
+
+  @media (max-width: 1300px) {
     .navbar {
       display: flex;
       flex-direction: column;
@@ -589,6 +594,8 @@ a{
     }
 
   }
+
+  
   .skills-container{
     position:relative;
     display:flex;
@@ -613,14 +620,24 @@ a{
 }
 
 .skill-fade-text{
-  position:absolute;
+  /* position:absolute;
   font-size:15em;
   font-style:bold;
   color:rgb(231,231,231);
   bottom:-34.5%;
-  right:-25%;
+  right:-5%;
   user-select:none;
-  overflow-y:hidden;
+  overflow-y:hidden; */
+  position:absolute;
+  user-select:none;
+  font-size: 15em;
+  color:rgb(231,231,231);
+  
+  bottom: -36%;
+  right: -1%;
+  font-weight: bold;
+  transition: all 3s;
+  
 }
 
 .blob-style{
@@ -693,7 +710,7 @@ a{
   justify-content: center;
 }
 
-.form{
+/* .form{
   display:flex;
   flex-direction: column;
   gap:30px;
@@ -735,7 +752,7 @@ a{
 .submit-icon{
   padding:0 1rem;
   font-size:1.5rem;
-}
+} */
 
 footer{
   position:relative;
@@ -747,7 +764,8 @@ footer{
 .footer-wrapper{
   display:flex;
   gap:1rem;
-  padding:1.2rem;
+  margin-right: 10rem;
+  padding: 1.2rem;
   justify-content: space-between;
   align-items:center;
 }
@@ -778,7 +796,7 @@ footer{
 .icon-wrapper{
   display:flex;
   gap:1rem;
-}
+} 
 
 @media (max-width: 1300px){
   .skill-fade-text{
